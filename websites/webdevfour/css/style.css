@@ -1,0 +1,652 @@
+/*
+font used:-
+font-family: 'Montserrat', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bevan', cursive; */
+
+/* desktop screens */
+
+@media screen and (min-width:768px){
+    
+.bg-img {
+    height: 825px;
+    background: url('../image/background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.nav-itoms {
+    z-index: 10;
+}
+
+.nav-icon {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon p {
+    margin: 0 !important;
+}
+
+.nav-font-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3d2514 !important;
+}
+
+.nav-font-2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: #3d2514 !important;
+}
+
+.nav-itom-color {
+    color: #3d2514 !important;
+}
+
+.fancy-text {
+    border: 3px solid #3d2514;
+    border-style: dashed;
+    width: fit-content;
+    padding: 3px 10px;
+}
+
+.head-fonts h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 114px;
+    line-height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.head-fonts h4 {
+    font-size: 56px;
+    font-family: 'Bevan', cursive;
+    z-index: 2;
+    position: relative;
+}
+
+.head-fonts h1::after {
+    content: 'BURGER';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: white;
+    z-index: -1;
+    font-family: 'Bevan', cursive;
+    font-size: 114px;
+}
+
+.head-fonts h4::after {
+    content: 'WEEK';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: white;
+    z-index: -1;
+    font-family: 'Bevan', cursive;
+    font-size: 56px;
+}
+
+.price-tag {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #bf2222;
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+}
+
+.price-tag::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px dashed white;
+}
+
+.sec-1 p {
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: uppercase;
+    /* margin: 30px 0 0 30px; */
+    transform-origin: 0 0;
+    transition: all 400ms ease-in-out;
+}
+
+.sec-1 {
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.sec-1 p span {
+    font-size: 40px;
+}
+
+.sec-2-content h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #ffc045;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sec-2-content h1 {
+    font-family: 'Bevan', cursive;
+    color: #3d2514;
+    font-size: 50px;
+}
+
+.sec-2-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #3d2514;
+}
+
+.sec-2 h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sec-2 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.sec-2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-top: 16px;
+}
+
+.sec-2 a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #bf2222;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Bevan', cursive;
+    color: white;
+    margin-top: 16px;
+}
+
+.events-holder {
+    box-shadow: 8px 8px 30px 0 rgb(168, 174, 199);
+}
+
+.sec-3 h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 42px;
+    color: #3d2514;
+}
+
+.sec-3 h1 span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d2514;
+}
+
+.sec-3 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.heading h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 42px;
+    color: #3d2514;
+}
+
+.heading h1 span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d2514;
+}
+.booking-form input{
+    width: 48%;
+    height: 70px;
+    border: 3px solid #bebebe;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.booking-form{
+    margin-top: 60px;
+}
+.booking-form input::placeholder{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #3d2514;
+    font-size: 20px;
+}
+.booking-form button{
+    width: 48%;
+    height: 70px;
+    background-color: #bf2222;
+    font-size: 23px;
+    font-family: 'Bevan', cursive;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.burger{
+    left: 0;
+    top: -40%;
+    transform: scale(1.5);
+    z-index: -5;
+}
+.cold-drinks{
+    left: 15%;
+    top: 5%;
+    transform: scale(1.3);
+    z-index: -5;
+}
+.food-plate{
+    right: 0;
+    top: 60%;
+    transform-origin: right;
+    transform: scale(1.5);
+    z-index: -5;
+}
+.footer-bg-img{
+    background: url(../image/footer-img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 75px 45px 10px 45px;
+}
+.footer-left p{
+    font-size: 18px;
+    color: white;
+    margin-top: 50px;
+}
+.footer-right p{
+    color: white;
+    font-size: 25px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+.footer-right p span{
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 20px;
+} 
+.footer-bottom button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+.footer-bottom p{
+    color: white;
+    font-size: 17px;
+}
+.footer-bottom{
+    padding-top: 80px;
+}
+
+/* hover effects */
+.sec-1 a:hover~p{
+     transform: scale(1.2);
+}
+.sec-1 img{
+    display:  block;
+}
+
+.sec-1 img{
+    display: block;
+    background: lightblue;
+    z-index: 100;
+}
+
+}
+
+/* for mobile screens */
+@media screen and (max-width:768px){
+    
+    .bg-img {
+        height: 825px;
+        background: url('../image/background-image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+    }
+    
+    .nav-itoms {
+        z-index: 10;
+    }
+    
+    .nav-icon {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-icon p {
+        margin: 0 !important;
+    }
+    
+    .nav-font-1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #3d2514 !important;
+    }
+    
+    .nav-font-2 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: bold;
+        color: #3d2514 !important;
+    }
+    
+    .nav-itom-color {
+        color: #3d2514 !important;
+    }
+    
+    .fancy-text {
+        border: 3px solid #3d2514;
+        border-style: dashed;
+        width: fit-content;
+        padding: 3px 10px;
+    }
+    
+    .head-fonts h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 50px;
+        line-height: auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .head-fonts h4 {
+        font-size: 56px;
+        font-family: 'Bevan', cursive;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .head-fonts h1::after {
+        content: 'BURGER';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        color: white;
+        z-index: -1;
+        font-family: 'Bevan', cursive;
+        font-size: 50px;
+    }
+    
+    .head-fonts h4::after {
+        content: 'WEEK';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        color: white;
+        z-index: -1;
+        font-family: 'Bevan', cursive;
+        font-size: 56px;
+    }
+    
+    .price-tag {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: #bf2222;
+        position: absolute;
+        left: 70px;
+        bottom: 30px;
+    }
+    
+    .price-tag::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 85%;
+        height: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 3px dashed white;
+    }
+    
+    .sec-1 p {
+        font-size: 30px;
+        font-family: 'Barlow Condensed', sans-serif;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        text-transform: uppercase;
+        margin: 10px 0 0 10px;
+        transform-origin: 0 0;
+        transition: all 400ms ease-in-out;
+    }
+    
+    .sec-1 {
+        position: relative;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+    }
+    
+    .sec-1 p span {
+        font-size: 40px;
+    }
+    
+    .sec-2-content h3 {
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        padding: 10px;
+        background-color: #ffc045;
+        width: fit-content;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .sec-2-content h1 {
+        font-family: 'Bevan', cursive;
+        color: #3d2514;
+        font-size: 50px;
+    }
+    
+    .sec-2-content p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        color: #3d2514;
+    }
+    
+    .sec-2 h3 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    
+    /* .sec-2 img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+     */
+    .sec-2 p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        margin-top: 16px;
+    }
+    
+    .sec-2 a {
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #bf2222;
+        text-decoration: none;
+        font-size: 23px;
+        font-family: 'Bevan', cursive;
+        color: white;
+        margin-top: 16px;
+    }
+    
+    .events-holder {
+        box-shadow: 8px 8px 30px 0 rgb(168, 174, 199);
+    }
+    
+    .sec-3 h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 42px;
+        color: #3d2514;
+    }
+    
+    .sec-3 h1 span {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #3d2514;
+    }
+    
+    .sec-3 p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+    
+    .heading h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 42px;
+        color: #3d2514;
+    }
+    
+    .heading h1 span {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #3d2514;
+    }
+    .booking-form input{
+        width: 100%;
+        height: 70px;
+        border: 3px solid #bebebe;
+        margin-bottom: 28px;
+        border-radius: 5px;
+        padding-left: 20px;
+    }
+    .booking-form{
+        margin-top: 60px;
+    }
+    .booking-form input::placeholder{
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #3d2514;
+        font-size: 20px;
+    }
+    .booking-form button{
+        width: 100%;
+        height: 70px;
+        background-color: #bf2222;
+        font-size: 23px;
+        font-family: 'Bevan', cursive;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    .burger{
+        left: 0;
+        top: -40%;
+        transform: scale(1.5);
+        z-index: -5;
+    }
+    .cold-drinks{
+        left: 15%;
+        top: 5%;
+        transform: scale(1.3);
+        z-index: -5;
+    }
+    .food-plate{
+        right: 0;
+        top: 60%;
+        transform-origin: right;
+        transform: scale(1.5);
+        z-index: -5;
+    }
+    .footer-bg-img{
+        background: url(../image/footer-img.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 75px 45px 10px 45px;
+    }
+    .footer-left p{
+        font-size: 18px;
+        color: white;
+        margin-top: 50px;
+    }
+    .footer-right p{
+        color: white;
+        font-size: 25px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+    }
+    .footer-right p span{
+        font-size: 30px;
+        display: inline-block;
+        margin-right: 20px;
+    } 
+    .footer-bottom button{
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+    }
+    .footer-bottom p{
+        color: white;
+        font-size: 17px;
+    }
+    .footer-bottom{
+        padding-top: 80px;
+    }
+    .footer-left img{
+        width: 70%;
+    }
+    
+    /* hover effects */
+    .sec-1 a:hover~p{
+         transform: scale(1.2);
+    }
+    .sec-1 img{
+        display:  block;
+    }
+    
+    .sec-1 img{
+        display: block;
+        background: lightblue;
+        z-index: 100;
+    }
+    
+    
+}
+.footer-icons a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+}

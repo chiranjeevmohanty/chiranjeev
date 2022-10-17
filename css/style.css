@@ -1,0 +1,1167 @@
+/* basic styling */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* variables */
+.basic-button, footer .footer-buttons .contact, header .head-buttons .download-but {
+  font-family: Microsoft Tai Le;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+/* styling for navbar */
+.nav-holder {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  z-index: 90;
+  top: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 99;
+  padding-top: 20px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav img {
+  width: 40px;
+}
+nav .burger-menu {
+  width: 40px;
+  z-index: 10;
+}
+nav .burger-menu span {
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  background-color: black;
+  margin-left: auto;
+  transition: all 400ms ease-in;
+  transform-origin: right;
+}
+nav .burger-menu :nth-child(1) {
+  margin-bottom: 8px;
+}
+nav .burger-menu :nth-child(2) {
+  margin-bottom: 8px;
+  width: 35px;
+}
+nav .burger-menu :nth-child(3) {
+  margin-top: 8px;
+  width: 30px;
+}
+nav .nav-itoms-desktop {
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+  transition: all 400ms ease-in;
+}
+nav .nav-itoms-desktop a {
+  text-decoration: none;
+  position: absolute;
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 0 5px;
+  right: -10px;
+  top: 0;
+  transition: all 400ms ease-in;
+}
+nav .nav-itoms-desktop a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ff0099;
+  left: 0;
+  bottom: -25px;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+nav .nav-itoms-desktop a:hover::before {
+  opacity: 1;
+  bottom: -5px;
+}
+nav .nav-itoms-mob {
+  display: none;
+}
+
+/* styling for header */
+header {
+  padding: 100px 0 70px 0;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 0;
+}
+header p {
+  font-family: Calibri;
+  font-size: 18px;
+}
+header .head-buttons {
+  padding-top: 15px;
+}
+header .head-buttons .download-but {
+  background-color: black;
+  position: relative;
+  transition: all 400ms linear;
+}
+header .head-buttons .download-but:hover::before {
+  width: 75%;
+}
+header .head-buttons .download-but:hover::after {
+  width: 75%;
+}
+header .head-buttons .download-but::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  left: 18px;
+  top: -5px;
+  background-color: #ff0099;
+  transition: all 400ms linear;
+}
+header .head-buttons .download-but::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  right: 18px;
+  bottom: -5px;
+  background-color: #ff0099;
+  transition: all 400ms linear;
+}
+header .head-buttons .arrow-down-button:hover {
+  background-color: rgba(243, 157, 158, 0.4470588235);
+}
+header .head-buttons .arrow-down-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  padding: 14px 12.5px 11px 12.5px;
+  background-color: #f39d9e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  transition: all 400ms linear;
+}
+
+/* styling for categories section */
+#categories {
+  padding: 70px 0;
+}
+#categories .container {
+  display: grid;
+  height: 440px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+#categories .container a {
+  position: relative;
+  border-radius: 10px;
+}
+#categories .container a svg {
+  position: absolute;
+}
+#categories .container a h3 {
+  position: absolute;
+  bottom: -13px;
+  left: 15px;
+  color: white;
+  font-size: 23px;
+}
+#categories .sec-1 {
+  background-color: #f4a560;
+}
+#categories .sec-1 svg {
+  width: 70%;
+  right: 15px;
+}
+#categories .sec-2 {
+  background-color: #f39d9e;
+}
+#categories .sec-2 svg {
+  width: 60%;
+  right: 15px;
+  top: 15px;
+}
+#categories .sec-3 {
+  grid-column: 1/3;
+  background-color: #e77666;
+}
+#categories .sec-3 svg {
+  width: 40%;
+  right: 15px;
+  top: 15px;
+}
+#categories .sec-4 {
+  grid-column: 3/5;
+  grid-row: 1/3;
+  background-color: #755cde;
+}
+#categories .sec-4 svg {
+  width: 45%;
+  top: 15px;
+  right: 15px;
+}
+#categories .sec-5 {
+  grid-column: 5/7;
+  grid-row: 1/2;
+  background-color: #62c4b7;
+}
+#categories .sec-5 svg {
+  width: 40%;
+  top: 15px;
+  right: 15px;
+}
+#categories .sec-6 {
+  grid-column: 5/7;
+  grid-row: 2/3;
+  background-color: #55204a;
+}
+#categories .sec-6 svg {
+  width: 50%;
+  top: 15px;
+  right: 15px;
+}
+
+/* styling for about section */
+#about {
+  padding: 70px 0;
+}
+#about .container {
+  display: flex;
+  justify-content: space-around;
+}
+#about .container div {
+  position: relative;
+}
+#about h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+}
+#about .heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#about .heading img {
+  width: 30px;
+}
+#about .heading h3 {
+  font-size: 23px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+#about .heading span {
+  display: inline-block;
+  position: absolute;
+  height: 4px;
+  width: 70px;
+  bottom: 15px;
+  left: 47px;
+}
+#about .content {
+  width: 350px;
+}
+#about .content h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#about .content p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+#about .education span {
+  background-color: #e77666;
+}
+#about .qualification span {
+  background-color: #62c4b7;
+}
+#about .skills span {
+  background-color: #f39d9e;
+}
+
+/* styling for my works */
+#my-works {
+  background-color: rgb(246, 240, 239);
+  padding: 70px 0;
+}
+#my-works h2 {
+  font-size: 35px;
+  text-align: center;
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+#my-works .bi::before,
+#my-works [class^=bi-]::before,
+#my-works [class*=" bi-"]::before {
+  font-size: 40px;
+  margin-top: 30px;
+  transition: all 400ms linear;
+}
+#my-works .bi-arrow-left-circle-fill:hover,
+#my-works .bi-arrow-right-circle-fill:hover {
+  background-color: transparent;
+  color: #755cde;
+}
+#my-works .owl-prev:hover,
+#my-works .owl-next:hover {
+  background-color: transparent;
+}
+
+/* styling for footer */
+footer {
+  padding: 90px 0 50px 0;
+}
+footer .container {
+  background-color: black;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer #logo {
+  display: flex;
+}
+footer #logo svg {
+  width: 40px;
+}
+footer #logo h3 {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+footer .footer-buttons .contact {
+  background-color: #f39d9e;
+  transition: all 400ms linear;
+}
+footer .footer-buttons .footer-icons a {
+  display: inline-block;
+  padding-top: 20px;
+  position: relative;
+}
+footer .footer-buttons .footer-icons a img {
+  height: 20px;
+  margin: 0 5px;
+}
+footer .footer-buttons .footer-icons a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  transition: all 400ms linear;
+  background-color: #755cde;
+  bottom: -8px;
+}
+footer .footer-buttons .footer-icons a:hover::before {
+  width: 100%;
+}
+footer .footer-buttons .contact:hover {
+  background-color: #df6668;
+}
+footer .footer-buttons .up-but:hover {
+  background-color: rgba(255, 255, 255, 0.563);
+}
+footer .footer-buttons .up-but {
+  transition: all 400ms linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  padding: 14px 15px 11px 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: white;
+}
+footer .footer-buttons .up-but svg {
+  width: 25px;
+  transform: rotate(180deg);
+}
+
+/* =========================contact us starts======================== */
+#contact-nav {
+  padding: 30px 0;
+}
+#contact-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact-nav img {
+  width: 40px;
+}
+#contact-nav a {
+  font-size: 40px;
+  color: black;
+}
+
+#contact .container {
+  margin-top: 80px;
+  display: flex;
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  border-radius: 10px;
+  padding: 120px 0 80px 0;
+  position: relative;
+}
+#contact h2 {
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contact h2::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  height: 4px;
+  background-color: #755cde;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contact .illustration-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+#contact .illustration-section img {
+  width: 70%;
+}
+#contact .illustration-section p {
+  font-size: 19px;
+  color: #9c9caf;
+}
+#contact .illustration-section .icons a {
+  display: inline-block;
+  margin-right: 13px;
+  position: relative;
+}
+#contact .illustration-section .icons a img {
+  height: 30px;
+}
+#contact .illustration-section .icons a::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background-color: #755cde;
+  bottom: 0;
+  transition: all 400ms linear;
+}
+#contact .illustration-section .icons a:hover::before {
+  width: 100%;
+}
+#contact .form-field {
+  width: 50%;
+  padding: 0 50px;
+}
+#contact .form-field .error {
+  font-size: 16px;
+  color: red;
+  font-family: Calibri;
+}
+#contact .form-field .name-err-icon, #contact .form-field .name-suc-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 16px;
+  display: none;
+}
+#contact .form-field .tel-err-icon, #contact .form-field .tel-suc-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 70px;
+  display: none;
+}
+#contact .form-field .email-err-icon, #contact .form-field .email-suc-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 125px;
+  display: none;
+}
+#contact .form-field .name-err-icon, #contact .form-field .tel-err-icon, #contact .form-field .email-err-icon {
+  color: red;
+}
+#contact .form-field .name-suc-icon, #contact .form-field .tel-suc-icon, #contact .form-field .email-suc-icon {
+  color: green;
+}
+#contact .form-field p {
+  font-size: 19px;
+  color: #9c9caf;
+}
+#contact .form-field form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#contact .form-field form input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 15px 0;
+  padding-left: 15px;
+  margin: 5px 0;
+}
+#contact .form-field form input ::-moz-placeholder {
+  font-size: 17px;
+  color: #9c9caf;
+}
+#contact .form-field form input :-ms-input-placeholder {
+  font-size: 17px;
+  color: #9c9caf;
+}
+#contact .form-field form input ::placeholder {
+  font-size: 17px;
+  color: #9c9caf;
+}
+#contact .form-field form input:focus {
+  outline: 2px solid red;
+  background-color: white;
+}
+#contact .form-field form textarea::-moz-placeholder {
+  font-family: Calibri;
+  font-size: 16px;
+}
+#contact .form-field form textarea:-ms-input-placeholder {
+  font-family: Calibri;
+  font-size: 16px;
+}
+#contact .form-field form textarea::placeholder {
+  font-family: Calibri;
+  font-size: 16px;
+}
+#contact .form-field form textarea {
+  width: 100%;
+  margin: 5px 0 10px 0;
+  padding-left: 15px;
+  padding-top: 8px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+#contact .form-field .buttons-div {
+  display: flex;
+  gap: 10px;
+}
+#contact .form-field .buttons-div :nth-child(1) {
+  background-color: #f4a560;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+  font-size: 16px;
+  width: 50%;
+  cursor: pointer;
+  transition: all 400ms linear;
+}
+#contact .form-field .buttons-div :nth-child(2) {
+  background-color: #755cde;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: Microsoft Tai Le;
+  font-weight: bold;
+  width: 50%;
+  cursor: pointer;
+  transition: all 400ms linear;
+}
+#contact .form-field .buttons-div :nth-child(1):hover {
+  background-color: #be722f;
+}
+#contact .form-field .buttons-div :nth-child(2):hover {
+  background-color: #3e25a4;
+}
+
+/* =========================contact us ends======================== */
+/* ============================================== */
+/* styling for works */
+#works {
+  padding: 50px 0;
+}
+#works #filtter-btn {
+  display: none;
+}
+#works .filtter {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+}
+#works .filtter a {
+  text-decoration: none;
+  font-family: Microsoft Tai Le;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 30px;
+  display: inline-block;
+  color: black;
+  position: relative;
+  z-index: 4;
+  transition: all 400ms linear;
+  position: relative;
+}
+#works .filtter a::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #755cde;
+  display: inline-block;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+#works .filtter a:hover::before {
+  opacity: 1;
+}
+#works .filtter a:focus::before {
+  opacity: 1;
+}
+#works .filtter a:focus {
+  color: white;
+}
+#works .filtter a:hover {
+  color: white;
+}
+#works .filtter .animation {
+  position: absolute;
+  height: 100%;
+  width: 220px;
+  border-radius: 10px;
+  display: block;
+  left: 0;
+  top: 0;
+  background-color: #755cde;
+  transition: all 400ms linear;
+}
+
+#ui-works {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+}
+#ui-works a img {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+
+#illustration-works {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+#illustration-works a img {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+
+#logo-design {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  transition: all 400ms linear;
+}
+#logo-design a img {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+
+#banner {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  transition: all 400ms linear;
+}
+#banner a img {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+
+#print-media {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  transition: all 400ms linear;
+}
+#print-media a img {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+#print-media :nth-child(9) {
+  display: none;
+}
+
+#development {
+  padding-top: 70px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#development a {
+  box-shadow: 0 0 20px 0 #d9d6ed;
+  width: 100%;
+}
+#development a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#development a:nth-child(1) {
+  grid-column: 1/5;
+}
+#development a:nth-child(1) img {
+  height: 400px;
+}
+#development a:nth-child(2) {
+  grid-column: 5/9;
+}
+#development a:nth-child(2) img {
+  height: 400px;
+}
+#development a:nth-child(3) {
+  grid-column: 1/5;
+}
+#development a:nth-child(3) img {
+  height: 400px;
+}
+#development a:nth-child(4) {
+  grid-column: 5/9;
+}
+#development a:nth-child(4) img {
+  height: 400px;
+}
+#development a:nth-child(5) {
+  grid-column: 1/3;
+}
+#development a:nth-child(5) img {
+  height: 500px;
+}
+#development a:nth-child(6) {
+  grid-column: 3/5;
+}
+#development a:nth-child(6) img {
+  height: 500px;
+}
+#development a:nth-child(7) {
+  grid-column: 5/7;
+}
+#development a:nth-child(7) img {
+  height: 500px;
+}
+#development a:nth-child(8) {
+  grid-column: 7/9;
+}
+#development a:nth-child(8) img {
+  height: 500px;
+}
+
+/* ============================================== */
+/* hover effects */
+/* responsive design */
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+  /* styling for category section */
+  #categories .container {
+    height: 380px;
+  }
+  /* ================styling for works================ */
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  /* styling for header */
+  header {
+    text-align: center;
+  }
+  /* styling for category section */
+  #categories .container {
+    height: 320px;
+  }
+  /* styling for about */
+  #about .content {
+    width: 300px;
+  }
+  /* ================styling for works================ */
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  /* styling for categories */
+  #categories .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 480px;
+  }
+  #categories .sec-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #categories .sec-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #categories .sec-3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #categories .sec-4 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  #categories .sec-5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  #categories .sec-6 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  /* styling for about section */
+  #about .heading h3 {
+    font-size: 19px;
+  }
+  #about .content {
+    width: 200px;
+  }
+  #about .content h4 {
+    font-size: 16px;
+  }
+  /* stylings for works section */
+  #logo-design {
+    grid-template-columns: auto auto;
+  }
+  #illustration-works {
+    grid-template-columns: auto auto auto;
+  }
+  #print-media {
+    grid-template-columns: auto auto auto;
+  }
+  #print-media :nth-child(9) {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  /* styling for category */
+  #categories .container {
+    height: 360px;
+  }
+  #categories .container a h3 {
+    font-size: 18px;
+    left: 10px;
+  }
+  #categories .container .sec-2 svg {
+    width: 50%;
+  }
+  /* styling for about section */
+  #about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .heading h3 {
+    font-size: 23px;
+  }
+  #about .content {
+    width: 300px;
+  }
+  #about .content h4 {
+    font-size: 20px;
+  }
+  #about .content p {
+    font-size: 18px;
+  }
+  /* styling for footer */
+  footer .container {
+    flex-direction: column-reverse;
+  }
+  footer #logo {
+    padding-top: 50px;
+  }
+  /* ============================================== */
+  /* styling for contact me */
+  #contact .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #contact .container div {
+    width: 100%;
+  }
+  #contact .container .illustration-section {
+    padding-bottom: 50px;
+  }
+  /* ============================================== */
+  /* styling for contact me */
+  #ui-works {
+    grid-template-columns: auto auto auto !important;
+  }
+  #illustration-works {
+    grid-template-columns: auto auto;
+  }
+  #banner {
+    grid-template-columns: auto auto;
+  }
+  #print-media {
+    grid-template-columns: auto auto;
+  }
+  #print-media :nth-child(9) {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  /* styling for nav */
+  nav .nav-itoms-desktop {
+    display: none;
+  }
+  nav .nav-itoms-mob {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    align-items: left;
+    position: absolute;
+    left: -90vw;
+    top: -20px;
+    z-index: -2;
+    background-color: #755cde;
+    padding: 100px 0px 90px 30px;
+    border-radius: 0 0 10px 0;
+    opacity: 1;
+    transition: all 400ms ease-in;
+  }
+  nav .nav-itoms-mob a {
+    text-decoration: none;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 15px;
+    color: white;
+  }
+  /* styling for header */
+  header .download-but {
+    padding: 15px 60px !important;
+  }
+  /* styling for category */
+  #categories .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 300vw;
+    gap: 10px;
+  }
+  #categories .container a h3 {
+    font-size: 20px;
+  }
+  #categories .sec-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #categories .sec-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #categories .sec-3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #categories .sec-4 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  #categories .sec-5 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  #categories .sec-6 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  /* styling for my works */
+  #my-works .bi::before,
+#my-works [class^=bi-]::before,
+#my-works [class*=" bi-"]::before {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  /* styling for footer */
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  footer .container {
+    flex-direction: column-reverse;
+  }
+  footer .footer-buttons .footer-icons {
+    text-align: center;
+  }
+  footer .footer-buttons .footer-icons a img {
+    height: 25px;
+    margin: 20px 10px;
+  }
+  footer .footer-buttons .contact {
+    padding: 15px 50px !important;
+  }
+  /* ======================== */
+  /* styling for contact me */
+  #contact {
+    padding: 20px;
+  }
+  #contact .container {
+    margin-top: 30px !important;
+  }
+  #contact .container h2 {
+    left: 49.5%;
+  }
+  #contact .illustration-section {
+    padding: 0 10px 70px 10px !important;
+  }
+  #contact .form-field {
+    padding: 0 20px !important;
+  }
+  /* ======================== */
+  /* styling for works */
+  #ui-works {
+    grid-template-columns: auto auto !important;
+  }
+  #works {
+    padding-top: 20px;
+    position: relative;
+  }
+  #works #filtter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #d9d6ed;
+    border: none;
+    background-color: white;
+    font-family: Microsoft Tai Le;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #works #filtter-btn i {
+    margin-right: 10px;
+    font-size: 25px;
+    transition: all 200ms linear;
+    transform-origin: center;
+  }
+  #works .filtter {
+    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 20px;
+    box-shadow: 0 0 20px 0 #d9d6ed;
+    top: 100px;
+    transition: all 400ms linear;
+  }
+  #works .filtter a {
+    margin: 0;
+    box-shadow: none;
+    padding: 15px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

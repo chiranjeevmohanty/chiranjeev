@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.84 91.18">
+    <defs>
+        <style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.cls-3{opacity:0.5;}.cls-4{opacity:0.25;}.cls-5{fill:#62c4b7;}.cls-6{fill:#755cde;}.cls-7{fill:#e77666;}</style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" d="M70.4,50.34H91.22a0,0,0,0,1,0,0V78.62A12.56,12.56,0,0,1,78.66,91.18H57.84a0,0,0,0,1,0,0V62.91A12.56,12.56,0,0,1,70.4,50.34Z" />
+            <circle class="cls-2" cx="81.35" cy="11.49" r="10.49" />
+            <circle class="cls-3" cx="58.11" cy="11.49" r="10.49" />
+            <circle class="cls-4" cx="34.88" cy="11.49" r="10.49" />
+            <rect class="cls-5" x="68.06" y="27.66" width="23.82" height="23.82" />
+            <polygon class="cls-6" points="38.57 68.49 38.57 27.66 77.6 27.66 38.57 68.49" />
+            <circle class="cls-7" cx="22.12" cy="61.12" r="22.12" />
+            <circle cx="49.27" cy="41.69" r="1.63" />
+            <circle cx="64.66" cy="41.69" r="1.63" />
+            <circle cx="80.04" cy="41.69" r="1.63" />
+            <circle cx="49.27" cy="54.28" r="1.63" />
+            <circle cx="64.66" cy="54.28" r="1.63" />
+            <circle cx="80.04" cy="54.28" r="1.63" />
+            <circle cx="49.27" cy="66.86" r="1.63" />
+            <circle cx="64.66" cy="66.86" r="1.63" />
+            <circle cx="80.04" cy="66.86" r="1.63" />
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="contact-nav">
+        <div class="container">
+            <a href="index.html" class="bi bi-arrow-left-circle-fill"></a>
+            <img src="./image/SVG/logo.svg" alt="">
+    </section>
+    <section id="contact">
+        <div class="container">
+             <h2>Get In Touch</h2>
+            <div class="illustration-section">
+                <img src="./image/SVG/contact-illustration.svg" alt="contact-illustration">
+                <p>Click below icons to contact on suitable platform.</p>
+                <div class="icons">
+                    <a href="mailto:chiranjeevmohanty6969@gmail.com"><img src="./image/SVG/contact-icons/email-icon.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/chiranjeev-mohnaty-2b4b4023a/" target="_blank"><img src="./image/SVG/contact-icons/linkedin-icon.svg" alt=""></a>
+                    <a href="https://www.instagram.com/mohantychiranjeev/" target="_blank"><img src="./image/SVG/contact-icons/instagram-icon.svg" alt=""></a>
+                    <a href="https://www.behance.net/chiranjmohanty" target="_blank"><img src="./image/SVG/contact-icons/behance-icon.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="form-field">
+                <p>Fill up the form as followiing to get in touch with me.</p>
+                <form action="contact.php"  method="post" name="contactForm" onsubmit="return validateForm()">
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name">
+                    <i class="icon name-err-icon bi bi-exclamation-circle-fill"></i>
+                    <i class="icon name-suc-icon bi bi-check-circle-fill"></i>
+                    <div class="error name-err"></div>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                    <i class="icon tel-err-icon bi bi-exclamation-circle-fill"></i>
+                    <i class="icon tel-suc-icon bi bi-check-circle-fill"></i>
+                    <div class="error tel-err"></div>
+                    <input type="email" name="emailId" id="emailId" placeholder="Email Id">
+                    <i class="icon email-err-icon bi bi-exclamation-circle-fill"></i>
+                    <i class="icon email-suc-icon bi bi-check-circle-fill"></i>
+                    <div class="error email-err"></div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+                    <div class="buttons-div">
+                        <button id="submit" type="submit" value="submit">Submit</button>
+                        <button id="clear" type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/formvalidation.js"></script>
+</body>
+
+</html>

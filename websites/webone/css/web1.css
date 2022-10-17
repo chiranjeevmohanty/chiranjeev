@@ -1,0 +1,1386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+ 
+header {
+    /* background : linear-gradient(45deg, #8309FF 0 , #E100FF 100%); */
+    padding: 2vw;
+    position: relative;
+    height: 28vw;
+}
+#menu{
+    display: none;
+}
+
+.content img {
+    width: 45vw;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.upper div i img {
+    width: 1.5vw;
+    margin: 0 10px;
+}
+
+.upper div a {
+    text-decoration: none;
+    color: white;
+    font-family: Swis721 Hv BT;
+    font-size: 0.8vw;
+
+}
+
+.logo img {
+    width: 10vw;
+}
+
+.upper div {
+    height: 1.8vw;
+    display: flex;
+    align-items: center;
+}
+
+.upper {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5vw 2vw;
+    z-index: 1;
+}
+
+.upper::before {
+    content: '';
+    height: 150%;
+    width: 200%;
+    position: absolute;
+    margin-right: -2vw;
+    right: 0;
+    top: -34%;
+    background: linear-gradient(90deg, #e100ff00 0, #8309FF 100%);
+    z-index: -1;
+}
+
+.lower a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Swis721 Hv BT;
+    font-size:  0.8vw;
+}
+#close-but{
+    display: none;
+}
+
+.lower {
+    display: flex;
+    width:  60vw;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    margin: 1vw 2vw;
+    top: 40px;
+}
+
+.content h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 2.5vw;
+    font-family: Swis721 Hv BT;
+    color: #FFFFFF;
+}
+
+#but {
+    background-color: rgba(255, 255, 255, 0.44);
+    width: 135px;
+    height: 35px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#but a {
+    color: black;
+}
+
+#Layer_1 {
+    position: absolute;
+    top: 0;
+    width: auto;
+    left: 0;
+    z-index: -2;
+}
+
+.container {
+    padding: 0;
+    width: 1140px;
+    margin: 200px auto;
+}
+
+.description {
+    margin: 90px 0;
+}
+
+.description h2 {
+    font-size: 34pt;
+    font-family: Swis721 Hv BT;
+    color: #7F00FF;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.description h2 span {
+    font-size: 14pt;
+    font-family: Swis721 Hv BT;
+    color: black;
+}
+
+.description p {
+    font-family: Nirmala UI;
+    font-size: 14pt;
+    font-weight: regular;
+}
+
+.description div div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.row div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0 100px;
+}
+
+.row div i img {
+    width: 18px;
+    margin: 0 10px;
+}
+
+.row div p {
+    font-size: 18pt;
+    font-family: Nirmala UI;
+}
+
+.row {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.description2 {
+    display: flex;
+    justify-content: center;
+}
+
+.but button {
+    color: white;
+    height: 58px;
+    width: 243px;
+    background-color: #10E2E2;
+    border: none;
+    border-radius: 10px;
+    font-family: Nirmala UI;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.effect-trans{
+    transition: all 0.3s ease-in-out;
+}
+.effect:hover{
+    color: white;
+    background-color: #0fb5b5;
+}
+
+.but {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description3 h2 {
+    font-size: 34pt;
+    font-family: Swis721 Hv BT;
+    color: #7F00FF;
+    text-align: center;
+}
+
+.description3 h2 span {
+    font-size: 14pt;
+    font-family: Swis721 Hv BT;
+    color: black;
+}
+
+.description3 p {
+    font-size: 14pt;
+    font-family: Swis721 Hv BT;
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+.description3 {
+    margin: 150px 0 150px 0;
+}
+
+.quad-sec img {
+    width: 90px;
+    position: relative;
+    top: -50px;
+    box-shadow: 0px 10px 20px 0 rgb(188, 196, 211);
+    border-radius: 50%;
+}
+
+.quad-sec div {
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quad-sec div h1 {
+    font-family: Swis721 Hv BT;
+    font-size: 24px;
+}
+
+.quad-sec div ul li {
+    list-style: none;
+}
+
+.quad-sec div p {
+    font-family: Nirmala UI;
+    font-size: 14px;
+}
+
+.quad-sec div ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 0;
+    font-family: Nirmala UI;
+    font-size: 14px;
+}
+
+.quad-sec {
+    width: 261px;
+    height: 511px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(188, 196, 211);
+    margin: 12px;
+}
+
+.quad-sec div button {
+    height: 30px;
+    width: 163px;
+    border-radius: 7px;
+    border: none;
+    background-color: #10E2E2;
+    color: white;
+    font-family: Nirmala UI;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.form-field {
+    height: 475px;
+    width: 1140px;
+    margin: 12px 0;
+    background: linear-gradient(90deg, #09005D 0, #1A0F91 100%);
+    border-radius: 22px;
+    position: relative;
+}
+
+.form-field img {
+    width: 540px;
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+    transform: translateY(-50%);
+}
+
+.form-field form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 97px;
+    top: 90px;
+}
+
+.form-field form input {
+    display: block;
+    width: 459px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    margin: 11px 0;
+    padding-left: 10px;
+}
+
+.form-field form button {
+    display: block;
+    width: 229px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #10E2E2;
+    color: white;
+    font-family: Nirmala UI;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 11px;
+    border: none;
+}
+
+.form-field form ::placeholder {
+    color: #C3C3DD;
+}
+
+.content2 div img {
+    width: 107px;
+}
+
+.content2 div {
+    width: 874px;
+    height: 105px;
+}
+
+.content2 div p {
+    font-family: Nirmala UI;
+    font-size: 18px;
+}
+
+.content2 div p span {
+    font-family: Nirmala UI;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.content2 div {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content3 div img {
+    width: 107px;
+}
+
+.content3 div {
+    width: 874px;
+    height: 105px;
+}
+
+.content3 div p {
+    font-family: Nirmala UI;
+    font-size: 18px;
+    text-align: right;
+}
+
+.content3 div p span {
+    font-family: Nirmala UI;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content3 div {
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content3,
+.content2 {
+    margin: 70px 0;
+}
+
+.quote-section div img {
+    width: 558px;
+}
+.quote-img{
+    width: 558px;
+    height: 320px;
+}
+
+.quote {
+    width: 558px;
+    height: 190px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.quote-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.quote p:nth-child(2) {
+    font-family: Nirmala UI;
+    font-weight: lighter;
+    font-size: 21px;
+}
+
+.quote p:nth-child(3) {
+    font-family: Nirmala UI;
+    font-weight: regular;
+    font-size: 14px;
+}
+
+.quote p span {
+    font-family: Nirmala UI;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7F00FF;
+}
+
+.quote i:nth-child(1) img {
+    width: 21px;
+    position: absolute;
+    left: 30px;
+}
+
+.quote i:nth-child(3) img {
+    width: 21px;
+    position: absolute;
+    right: 45px;
+    transform: rotate(180deg);
+}
+
+#playbut {
+    position: absolute;
+    background-color: #7F00FF;
+    width: 97px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#playbut img {
+    width: 36px;
+}
+
+.slider-nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translatex(-50%);
+}
+
+
+
+
+/* footer:nth-child(1),
+footer:nth-child(2),
+footer:nth-child(3) {
+    display: flex; 
+    flex-direction: column;
+} */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    background : linear-gradient(90deg, #8309FF 0 , #E100FF 100%);
+    background-size: cover;
+    margin-top: 100px;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+footer a{
+    color: #fff !important;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/footer-image.png);
+    display: flex;
+    /* background-color: #a4a0d0; */
+}
+
+.sec-width {
+    width: 261px;
+}
+
+.sec-width h3,
+.nested h3 {
+    font-family: Nirmala UI;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.sec-width a {
+    margin: 6px 0;
+    text-decoration: none;
+    font-family: Nirmala UI;
+    font-size: 16px;
+    color: black;
+}
+
+.icon-width {
+    width: 26px;
+}
+
+.contact-icons img {
+    width: 35px;
+    margin: 0 10px;
+}
+
+.contact-icons {
+    display: flex;
+    /* background-color: #9891d3; */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: start;
+}
+
+.flex-row h3 {
+    margin-left: 10px;
+}
+
+.holder {
+    position: relative;
+    display: flex;
+    margin: 12px 0;
+}
+
+.next-but,
+.prev-but {
+    background-color: white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.prev-but {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-but {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-nav button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* .slider-nav button:nth-child(1) */ .active {
+    background-color: black;
+}
+.footer-holder{
+    background : linear-gradient(90deg, #8309FF 0 , #E100FF 100%);
+    padding-top: 100px;
+}
+.footer-text-format h3, .footer-text-format div p{
+    font-family: Nirmala UI;
+    font-size: 14px;
+}
+.footer-text-format{
+    font-family: Nirmala UI;
+    font-size: 14px;
+}
+.contact-icons a:hover{
+    transform: scale(1.2);
+}
+ 
+.anime{
+    position: relative;
+    animation-name: left-slide;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1 ;
+}
+@keyframes  left-slide {
+    0%{left: -10%; opacity: 0;}
+    100%{left: 0; opacity: 1;}
+}
+
+.anime2{
+    position: relative;
+    animation-name: right-slide;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1 ;
+}
+@keyframes right-slide{
+    0%{right: -10%; opacity: 0;}
+    100%{right: 0; opacity: 1;}
+}
+
+}
+
+/* for mobile screens */
+
+@media only screen and (max-width: 992px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        background : linear-gradient(45deg, #8309FF 0 , #E100FF 100%);
+        padding: 3vw;
+        position: relative;
+    }
+    
+    .content img {
+        width: 90vw;
+        display: block;
+        margin: 30px auto;
+
+    }
+    
+    .upper div i img {
+        width: 4vw;
+        margin-right: 1.5vw;
+    }
+    
+    .upper div a {
+        text-decoration: none;
+        color: white;
+        font-family: Swis721 Hv BT;
+        font-size: 3vw;
+    
+    }
+    
+    .logo img {
+        width:  20vw;
+    }
+    
+    .upper div {
+        margin: 2vw 0; 
+    }
+    
+    .upper {
+        display: block;
+        width: 100%;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #8409ff;
+        box-sizing: border-box;
+        padding: 3vw;
+    }
+    
+    
+    .lower a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: Swis721 Hv BT;
+        font-size:  3vw;
+        margin: 2vw 0;
+    }
+    
+    .lower {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content h1 {
+        color: white;
+        text-align: center;
+        font-size: 6vw;
+        font-family: Swis721 Hv BT;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    
+    #but {
+        background-color: rgba(255, 255, 255, 0.44);
+        width: 30%;
+        height: 8vw;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    
+    #but a {
+        color: black;
+    }
+    
+    #Layer_1 {
+        position: absolute;
+        top: 0;
+        width: auto;
+        left: 0;
+        z-index: -2;
+    }
+    
+    .container {
+        padding: 0;
+        width: 90vw;
+        margin: 50px auto;
+    }
+    
+    .description {
+        margin: 50px 0;
+    }
+    
+    .description h2 {
+        font-size: 5vw;
+        font-family: Swis721 Hv BT;
+        color: #7F00FF;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .description h2 span {
+        font-size: 2.5vw;
+        font-family: Swis721 Hv BT;
+        color: black;
+    }
+    
+    .description p {
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+        font-weight: regular;
+    }
+    
+    .description div div {
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+    
+    .row div {
+        display: flex;
+        align-items: center;
+        margin: 0 100px;
+    }
+    
+    .row div i img {
+        width: 18px;
+        margin: 0 10px;
+    }
+    
+    .row div p {
+        font-size: 3vw;
+        font-family: Nirmala UI;
+        margin-bottom: 15px;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+         
+    }
+    
+    .description2 {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .but button {
+        color: white;
+        margin-top: 30px;
+        height: 8vw;
+        width:  80%;
+        background-color: #10E2E2;
+        border: none;
+        border-radius: 0.7vw;
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .effect-trans{
+        transition: all 0.3s ease-in-out;
+    }
+    .effect:hover{
+        color: white;
+        background-color: #0fb5b5;
+    }
+    
+    .but {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .description3 h2 {
+        font-size: 5vw;
+        font-family: Swis721 Hv BT;
+        color: #7F00FF;
+        text-align: center;
+    }
+    
+    .description3 h2 span {
+        font-size: 2.5vw;
+        font-family: Swis721 Hv BT;
+        color: black;
+    }
+    
+    .description3 p {
+        font-size: 2.5vw;
+        font-family: Swis721 Hv BT;
+        color: black;
+        position: relative;
+        top: 10px;
+    }
+    
+    .description3 {
+        margin: 50px 0 100px 0 ;
+    }
+    
+    .quad-sec img {
+        width: 25vw;
+        position: relative;
+        top: 0;
+        transform: translateY(-50%);
+        box-shadow: 0px 10px 20px 0 rgb(188, 196, 211);
+        border-radius: 50%;
+    }
+    
+    .quad-sec div {
+        height: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .quad-sec div h1 {
+        font-family: Swis721 Hv BT;
+        font-size: 24px;
+    }
+    
+    .quad-sec div ul li {
+        list-style: none;
+    }
+    
+    .quad-sec div p {
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+    }
+    
+    .quad-sec div ul li a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 3px 0;
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+    }
+    
+    .quad-sec {
+        width: 80%;
+        height: fit-content;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 0 10px rgb(188, 196, 211);
+        padding: 3vw;
+        margin-bottom: 130px;
+    }
+    .section .quad-sec:nth-child(4){
+        margin-bottom: 0;
+    }
+    
+    .quad-sec div button {
+        height: 8vw;
+        width: 80%;
+        border-radius: 0.7vw;
+        border: none;
+        background-color: #10E2E2;
+        color: white;
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-field {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:  100%;
+        padding:20px 0;
+        margin: 12px 0;
+        background: linear-gradient(90deg, #09005D 0, #1A0F91 100%);
+        border-radius: 22px;
+        position: relative;
+    }
+    
+    .form-field img {
+        width: 70%;
+        margin: 10px 0 30px 0;
+    }
+    
+    .form-field form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .form-field form input {
+        display: block;
+        width: 80vw ;
+        height: 7vw;
+        border: none;
+        border-radius: 0.7vw;
+        margin: 11px 0;
+        padding-left: 10px;
+    }
+    
+    .form-field form button {
+        display: block;
+        width: 60%;
+        height: 7vw;
+        cursor: pointer;
+        border-radius: 0.7vw;
+        background-color: #10E2E2;
+        color: white;
+        font-family: Nirmala UI;
+        font-size: 2.5vw;
+        font-weight: bold;
+        margin-top: 11px;
+        border: none;
+    }
+    
+    .form-field form ::placeholder {
+        color: #C3C3DD;
+        font-size: 2vw;
+    }
+    
+    .content2 div img {
+        width: 20vw;
+    }
+    .content2{
+        width: 100%;
+        margin: 50px 0;
+    }
+    
+    .content2 div p {
+        font-family: Nirmala UI;
+        font-size: 3vw;
+        text-align: justify;
+    }
+    
+    .content2 div p span {
+        font-family: Nirmala UI;
+        display:block;
+        margin: 1.5vw 0;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: bold;
+        
+    }
+    
+    .content2 div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        width: 100%;
+        margin: 5vw 0;
+    }
+    .content3{
+        width: 100%;
+        margin: 50px0;
+    }
+    .content3 div img {
+        width: 20vw;
+    }
+    
+    
+    .content3 div p {
+        font-family: Nirmala UI;
+        font-size: 3vw;
+        text-align: justify;
+    }
+    
+    .content3 div p span {
+        font-family: Nirmala UI;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    
+    .content3 div {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%; 
+        height: fit-content;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    
+    /* .content3,
+    .content2 {
+        margin: 70px 0;
+    } */
+    
+     .quote-img{
+         width: 90vw;
+         height: 50vw;
+     }
+    
+    .quote {
+        width: 90vw;
+        height: 30vw;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .quote-section {
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .quote p:nth-child(2) {
+        font-family: Nirmala UI;
+        font-weight: lighter;
+        font-size: 18px;
+    }
+    
+    .quote p:nth-child(3) {
+        font-family: Nirmala UI;
+        font-weight: regular;
+        font-size: 14px;
+    }
+    
+    .quote p span {
+        font-family: Nirmala UI;
+        font-weight: bold;
+        font-size: 24px;
+        color: #7F00FF;
+    }
+    
+    .quote i:nth-child(1) img {
+        width: 21px;
+        position: absolute;
+        top: 6vw;
+        left: 8vw;
+    }
+    
+    .quote i:nth-child(3) img {
+        width: 21px;
+        position: absolute;
+        right: 45px;
+        transform: rotate(180deg);
+    }
+    
+    #playbut {
+        position: absolute;
+        background-color: #7F00FF;
+        width: 97px;
+        height: 97px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #playbut img {
+        width: 36px;
+    }
+    
+    .slider-nav {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translatex(-50%);
+    }
+    
+    
+    
+    
+    /* footer:nth-child(1),
+    footer:nth-child(2),
+    footer:nth-child(3) {
+        display: flex; 
+        flex-direction: column;
+    } */
+    
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        color: #fff;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background : linear-gradient(90deg, #8309FF 0 , #E100FF 100%);
+        background-size: cover;
+        margin-top: 100px;
+        box-sizing: border-box;
+        padding: 4vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer a{
+        color: #fff !important;
+    }
+    
+    .bg-img {
+        width: 100%;
+        height: 100%;
+        background-image: url(./image/footer-image.png);
+        display: flex;
+        /* background-color: #a4a0d0; */
+    }
+    
+    .sec-width {
+        width: 261px;
+    }
+    
+    .sec-width h3,
+    .nested h3 {
+        font-family: Nirmala UI;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    
+    .sec-width a {
+        margin: 6px 0;
+        text-decoration: none;
+        font-family: Nirmala UI;
+        font-size: 16px;
+        color: black;
+    }
+    
+    .icon-width {
+        width: 26px;
+    }
+    
+    .contact-icons img {
+        width: 35px;
+        margin: 0 10px;
+    }
+    
+    .contact-icons {
+        display: flex;
+        /* background-color: #9891d3; */
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .flex-row {
+        display: flex;
+        align-items: start;
+    }
+    
+    .flex-row h3 {
+        margin-left: 10px;
+    }
+    
+    .holder {
+        position: relative;
+        display: flex;
+        margin: 12px 0;
+    }
+    
+    /* .next-but,
+    .prev-but {
+        background-color: white;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 2;
+    } */
+    /* 
+    .prev-but {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .next-but {
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
+    .slider-nav button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    /* .slider-nav button:nth-child(1) */ .active {
+        background-color: black;
+    }
+    .footer-holder{
+        background : linear-gradient(90deg, #8309FF 0 , #E100FF 100%);
+        padding-top: 100px;
+    }
+    .footer-text-format h3, .footer-text-format div p{
+        font-family: Nirmala UI;
+        font-size: 14px;
+    }
+    .footer-text-format{
+        font-family: Nirmala UI;
+        font-size: 14px;
+    }
+    .contact-icons a:hover{
+        transform: scale(1.2);
+    }
+     
+    .anime{
+        position: relative;
+        animation-name: left-slide;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1 ;
+    }
+    @keyframes  left-slide {
+        0%{left: -10%; opacity: 0;}
+        100%{left: 0; opacity: 1;}
+    }
+    
+    .anime2{
+        position: relative;
+        animation-name: right-slide;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1 ;
+    }
+    @keyframes right-slide{
+        0%{right: -10%; opacity: 0;}
+        100%{right: 0; opacity: 1;}
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 2.5vw;
+        top: 2.5vw;
+        font-size: 5vw;
+        color: white;
+        padding: 0 0.7vw;
+        background-color: transparent;
+        border: 0.3vw solid white;
+        cursor: pointer;
+    }
+    #close-but{
+        display: none;
+        position: absolute;
+        right: 2.5vw;
+        top: 2.5vw;
+        font-size: 5vw;
+        color: white;
+        padding: 0 0.7vw;
+        background-color: transparent;
+        border: 0.3vw solid white;
+        cursor: pointer;
+    }
+    #menu:hover{
+        background-color: rgba(255, 255, 255, 0.369);
+    }
+    #close-but:hover{
+        background-color: rgba(255, 255, 255, 0.369);
+    }
+
+    .slide-down{
+        animation-name: slide;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes  slide {
+        0%{left: -50%; opacity: 0;}
+        100%{left: 0%; opacity: 1;}   
+    }
+    .slide-down1{
+        animation-name: slide1;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes  slide1 {
+        0%{left: 0; opacity: 1;}
+        100%{left: 50%; opacity: 0;}   
+    }
+    
+    }
