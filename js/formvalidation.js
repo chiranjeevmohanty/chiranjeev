@@ -60,7 +60,7 @@ function validateForm() {
         return false;
     }else{
         regex = /^\S+@\S+\.\S+$/;
-        if (regex.test(email) === false) {
+        if (regex.test(emailId) === false) {
             document.querySelector(".email-err-icon").style.display = "block";
             document.querySelector(".email-err").innerHTML = "Please enter valid number";
             numberField.focus();
@@ -73,16 +73,11 @@ function validateForm() {
             emailError = false;
         }
     }
-    if(message.value.trim() == null || message.value.trim() == ""){
-        message.focus();
-        return false;
-    } 
-
 }
 
 clearButton = document.getElementById("clear");
 icons = document.querySelectorAll(".icon"); 
-clearButton.addEventListener("click", (e)=>{ 
+clearButton.addEventListener("click", (e)=>{
     icons[0].style.display = "none";
     icons[1].style.display = "none";
     icons[2].style.display = "none";
