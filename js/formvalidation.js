@@ -62,7 +62,7 @@ function validateForm() {
         regex = /^\S+@\S+\.\S+$/;
         if (regex.test(emailId) === false) {
             document.querySelector(".email-err-icon").style.display = "block";
-            document.querySelector(".email-err").innerHTML = "Please enter valid number";
+            document.querySelector(".email-err").innerHTML = "Please enter valid email";
             numberField.focus();
             return false;
         }else{
