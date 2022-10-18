@@ -160,7 +160,7 @@ filterBtn.addEventListener("click", (e) => {
     }
 })
 
-function getWidth() {
+ 
     width = window.innerWidth;
     window.addEventListener("click", (e) => {
         if (width < 576) {
@@ -174,6 +174,3 @@ function getWidth() {
             mode = "on";
         }
     })
-}
-window.onload(getWidth());
-window.onresize(getWidth());

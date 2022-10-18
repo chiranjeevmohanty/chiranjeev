@@ -1,6 +1,7 @@
 /* basic styling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -56,46 +57,49 @@ nav .container {
 nav img {
   width: 40px;
 }
-nav .burger-menu {
+nav #burger-menu {
   width: 40px;
   z-index: 10;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
-nav .burger-menu span {
-  border-radius: 2px;
+nav #burger-menu span {
   display: block;
   height: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: black;
+  transform-origin: right;
   margin-left: auto;
   transition: all 400ms ease-in;
-  transform-origin: right;
 }
-nav .burger-menu :nth-child(1) {
+nav #burger-menu :nth-child(1) {
   margin-bottom: 8px;
+  width: 40px;
 }
-nav .burger-menu :nth-child(2) {
+nav #burger-menu :nth-child(2) {
   margin-bottom: 8px;
   width: 35px;
 }
-nav .burger-menu :nth-child(3) {
-  margin-top: 8px;
+nav #burger-menu :nth-child(3) {
   width: 30px;
 }
 nav .nav-itoms-desktop {
-  position: absolute;
-  right: 0px;
-  opacity: 0;
+  position: relative;
+  top: -100px;
   transition: all 400ms ease-in;
 }
 nav .nav-itoms-desktop a {
   text-decoration: none;
-  position: absolute;
   font-family: Calibri;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  position: relative;
   color: black;
-  padding: 0 5px;
-  right: -10px;
-  top: 0;
+  padding: 0 10px;
   transition: all 400ms ease-in;
 }
 nav .nav-itoms-desktop a::before {
@@ -429,7 +433,7 @@ footer .footer-buttons .up-but svg {
 
 /* =========================contact us starts======================== */
 #contact-nav {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 #contact-nav .container {
   display: flex;
@@ -1011,16 +1015,17 @@ footer .footer-buttons .up-but svg {
   }
   nav .nav-itoms-mob {
     display: flex;
-    width: 70vw;
+    width: 95vw;
     flex-direction: column;
-    align-items: left;
-    position: absolute;
+    align-items: center;
+    position: fixed;
     left: -90vw;
-    top: -20px;
+    transform: translateX(-50%);
+    top: 70px;
     z-index: -2;
     background-color: #755cde;
-    padding: 100px 0px 90px 30px;
-    border-radius: 0 0 10px 0;
+    padding: 50px 0px 50px 0;
+    border-radius: 10px;
     opacity: 1;
     transition: all 400ms ease-in;
   }
@@ -1033,9 +1038,6 @@ footer .footer-buttons .up-but svg {
     color: white;
   }
   /* styling for header */
-  header .download-but {
-    padding: 15px 60px !important;
-  }
   /* styling for category */
   #categories .container {
     display: grid;
@@ -1087,15 +1089,15 @@ footer .footer-buttons .up-but svg {
   footer .container {
     flex-direction: column-reverse;
   }
+  footer .logo-sec h3 {
+    font-size: 18px !important;
+  }
   footer .footer-buttons .footer-icons {
     text-align: center;
   }
   footer .footer-buttons .footer-icons a img {
     height: 25px;
     margin: 20px 10px;
-  }
-  footer .footer-buttons .contact {
-    padding: 15px 50px !important;
   }
   /* ======================== */
   /* styling for contact me */
@@ -1118,6 +1120,71 @@ footer .footer-buttons .up-but svg {
   /* styling for works */
   #ui-works {
     grid-template-columns: auto auto !important;
+  }
+  #development {
+    padding-top: 70px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #development a {
+    box-shadow: 0 0 20px 0 #d9d6ed;
+    width: 100%;
+  }
+  #development a img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  #development a:nth-child(1) {
+    grid-column: 1/9;
+  }
+  #development a:nth-child(1) img {
+    height: 300px;
+  }
+  #development a:nth-child(2) {
+    grid-column: 1/9;
+  }
+  #development a:nth-child(2) img {
+    height: 300px;
+  }
+  #development a:nth-child(3) {
+    grid-column: 1/9;
+  }
+  #development a:nth-child(3) img {
+    height: 300px;
+  }
+  #development a:nth-child(4) {
+    grid-column: 1/9;
+  }
+  #development a:nth-child(4) img {
+    height: 300px;
+  }
+  #development a:nth-child(5) {
+    grid-column: 1/5;
+  }
+  #development a:nth-child(5) img {
+    height: 200px;
+  }
+  #development a:nth-child(6) {
+    grid-column: 5/9;
+  }
+  #development a:nth-child(6) img {
+    height: 200px;
+  }
+  #development a:nth-child(7) {
+    grid-column: 1/5;
+  }
+  #development a:nth-child(7) img {
+    height: 200px;
+  }
+  #development a:nth-child(8) {
+    grid-column: 5/9;
+  }
+  #development a:nth-child(8) img {
+    height: 200px;
   }
   #works {
     padding-top: 20px;
