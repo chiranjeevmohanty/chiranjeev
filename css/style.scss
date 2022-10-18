@@ -145,7 +145,7 @@ header {
     font-size: 18px;
   }
   .head-buttons {
-    padding-top: 15px;
+    padding-top: 15px; 
     .download-but {
       @extend .basic-button;
       background-color: black;
@@ -1075,6 +1075,17 @@ $shadow: 0 0 20px 0 #d9d6ed;
         padding-top: 15px;
         color: white;
       }
+    }
+  }
+  .head-buttons{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    .arrow-down-button{
+      margin-top: 20px;
+    }
+    .download-but{
+      padding: 15px 60px !important;
     }
   }
   /* styling for header */

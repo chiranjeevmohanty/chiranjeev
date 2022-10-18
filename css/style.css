@@ -1037,6 +1037,17 @@ footer .footer-buttons .up-but svg {
     padding-top: 15px;
     color: white;
   }
+  .head-buttons {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .head-buttons .arrow-down-button {
+    margin-top: 20px;
+  }
+  .head-buttons .download-but {
+    padding: 15px 60px !important;
+  }
   /* styling for header */
   /* styling for category */
   #categories .container {

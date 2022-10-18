@@ -50,8 +50,6 @@ if (width >= 576) {
             mode = "close";
         }
     })
-
-
 }
 
 
